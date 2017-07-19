@@ -2,15 +2,30 @@
 <html>
 <head>
   <title>Vivi's Sketchpad</title>
-  <link rel="stylesheet" href="theme.css">
+
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/spectrum.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/sketch.js"></script>
+  <script src="js/spectrum.js"></script>
 </head>
 
 <body>
   <main>
     <form>
+      <!-- Number of squares + Grid clear -->
       # of squares:
-      <input type="text" name="squareNumber">
+      <input type="text" name="squareNumber" value="16">
       <button id="clear" type="button">Clear</button>
+      
+      <!-- Color picker -->
+		<input type='text' id="custom" />
+		<script>
+			$("#custom").spectrum({
+    			color: "#000"
+			});
+		</script>
     </form>
   </main>
 
@@ -18,8 +33,5 @@
     <!-- Inserir aqui textinho explicando como funciona o negócio -->
   </footer>
 </body>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="sketch.js"></script>
 
 </html>
