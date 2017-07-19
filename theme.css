@@ -1,4 +1,4 @@
-#container {
+main {
   height: 960px;
   width: 960px;
   padding: 0;
@@ -10,7 +10,9 @@
   float: left;
   padding: 0;
   margin: 0;
-  border: 1px solid black;
+  border: 1px solid grey;
   height: 60px;
   width: 60px;
+  user-drag: none;
+  -webkit-user-drag: none;
 }
