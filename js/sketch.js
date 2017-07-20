@@ -21,8 +21,8 @@ $(document).ready(function() {
 /*  $(".zoom").click(function() {
     var perc = $(this).val();
     $("body").css("zoom", perc);
-  });
-}); */
+  }); */
+});
 
 var drawGrid = function(square) {
 // Erases previous grid and draws another one
