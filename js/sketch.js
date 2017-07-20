@@ -17,7 +17,12 @@ $(document).ready(function() {
   $("body").on("contextmenu",function(e) {
     return false;
   })
-});
+
+/*  $(".zoom").click(function() {
+    var perc = $(this).val();
+    $("body").css("zoom", perc);
+  });
+}); */
 
 var drawGrid = function(square) {
 // Erases previous grid and draws another one
@@ -31,7 +36,7 @@ var drawGrid = function(square) {
 
 // Changes the size of the squares
 
-  var side = 960 / square;
+  var side = 500 / square;
   $(".grid").css({"height": side, "width": side});
 
 // Checks if mouse is pressed down
