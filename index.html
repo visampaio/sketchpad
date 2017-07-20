@@ -18,20 +18,23 @@
       # of squares:
       <input type="text" name="squareNumber" value="16">
       <button id="clear" type="button">Clear</button>
-      
       <!-- Color picker -->
-		<input type='text' id="custom" />
+		<input type='text' id="custom1" />
 		<script>
-			$("#custom").spectrum({
+			$("#custom1").spectrum({
     			color: "#000"
 			});
 		</script>
+    <input type='text' id="custom2" />
+		<script>
+			$("#custom2").spectrum({
+    			color: "#FFF"
+			});
+		</script>
     </form>
+    <div id="container"></div>
   </main>
 
-  <footer>
-    <!-- Inserir aqui textinho explicando como funciona o negócio -->
-  </footer>
 </body>
 
 </html>

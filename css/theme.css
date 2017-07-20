@@ -14,3 +14,7 @@ main {
   height: 60px;
   width: 60px;
 }
+
+form {
+  margin: 10px;
+}

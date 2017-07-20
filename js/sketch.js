@@ -30,6 +30,7 @@ var drawGrid = function(square) {
   }
 
 // Changes the size of the squares
+
   var side = 960 / square;
   $(".grid").css({"height": side, "width": side});
 
@@ -57,30 +58,37 @@ var drawGrid = function(square) {
     }
   });
 
-// Gets color from color picker
-  var color = $('#custom').spectrum('get').toHexString();
-	$('#custom').change(function() {
-		$('#custom').spectrum('get').toHexString();
-		color = $('#custom').spectrum('get').toHexString();
+// Gets left-clicker color from color picker
+  var color1 = $('#custom1').spectrum('get').toHexString();
+	$('#custom1').change(function() {
+		$('#custom1').spectrum('get').toHexString();
+		color1 = $('#custom1').spectrum('get').toHexString();
+});
+
+// Gets right-clicker color from color picker
+  var color2 = $('#custom2').spectrum('get').toHexString();
+	$('#custom2').change(function() {
+		$('#custom2').spectrum('get').toHexString();
+		color2 = $('#custom2').spectrum('get').toHexString();
 });
 
 // Paints the squares if you click
   $(".grid").mousedown(function(event) {
     if (event.which == 3) {
-      $(this).css("background-color", "white");
+      $(this).css("background-color", color2);
     }
     else {
-      $(this).css("background-color", color);
+      $(this).css("background-color", color1);
     }
   });
 
 // Paints the squares if you drag with mouse pressed
   $(".grid").hover(function() {
     if (downLeft) {
-        $(this).css("background-color", color);
+        $(this).css("background-color", color1);
     }
     else if(downRight) {
-      $(this).css("background-color", "white");
+      $(this).css("background-color", color2);
     }
   });
 
