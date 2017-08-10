@@ -18,10 +18,15 @@ $(document).ready(function() {
     return false;
   })
 
-/*  $(".zoom").click(function() {
-    var perc = $(this).val();
-    $("body").css("zoom", perc);
-  }); */
+  $("input:checkbox").change(function() {
+    if (this.checked) {
+      $(".grid").css({"border": "1px solid grey"});
+    }
+    else {
+      $(".grid").css({"border": "none"});
+    }
+  });
+
 });
 
 var drawGrid = function(square) {
