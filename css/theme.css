@@ -14,13 +14,9 @@ aside {
   font-size: 12px;
 }
 
-form {
-  margin: 10px;
-}
+form {margin: 10px;}
 
-input[type="text"] {
-  width: 20px;
-}
+input[type="text"] {width: 20px;}
 
 .grid {
   box-sizing: border-box;
@@ -30,4 +26,45 @@ input[type="text"] {
   border: 1px solid grey;
   height: 60px;
   width: 60px;
+}
+
+input[type="checkbox"] {display:none;}
+
+.slider {
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  position: relative;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 34px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  border-radius: 50%;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
 }

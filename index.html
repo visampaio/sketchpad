@@ -19,24 +19,27 @@
       <!-- Number of squares + Grid clear -->
       # of squares:
       <input type="text" name="squareNumber" value="16">
-      <button id="clear" type="button">Submit</button>
+      <button id="clear" type="button">Clear</button>
+
       <!-- Color picker -->
-		<input type='text' id="custom1" />
-		<script>
-			$("#custom1").spectrum({
+		  <input type='text' id="custom1" />
+		  <script>
+			   $("#custom1").spectrum({
     			color: "#000"
-			});
-		</script>
-    <input type='text' id="custom2" />
-		<script>
-			$("#custom2").spectrum({
+			   });
+		  </script>
+      <input type='text' id="custom2" />
+		  <script>
+			   $("#custom2").spectrum({
     			color: "#FFF"
-			});
-		</script>
-    <!-- <button class="zoom" type="button" value="25%">25%</button>
-    <button class="zoom" type="button" value="50%">50%</button>
-    <button class="zoom" type="button" value="75%">75%</button>
-    <button class="zoom" type="button" value="100%">100%</button> -->
+			   });
+		  </script>
+
+    Border:
+    <label>
+      <input type="checkbox" name="border" checked>
+      <span class="slider"></span>
+    </label>
     </form>
   </header>
   <aside>
@@ -44,7 +47,7 @@
   <p class="instructions">Instruções:
   <ol>
     <li>No canto superior esquerdo do site, defina o número de linhas e colunas que vão compor a sua tela de pintura (Padrão: 16). Pressione "Enter" ou clique no botão "Submit" para mudar o tamanho ou apagar completamente a pintura atual;</li>
-    <li>Ao lado do botão "Submit", você pode definir as cores para os cliques esquerdo e direito do mouse, respectivamente.</li>
+    <li>Ao lado do botão "Clear", você pode definir as cores para os cliques esquerdo e direito do mouse, respectivamente.</li>
     <li>Você pode clicar ou clicar + arrastar para pintar na tela!</li>
     <li>Use os comandos "CTRL +" ou "CTRL -" para modificar o Zoom da aplicação para permitir que ela ocupe corretamente o tamanho do seu navegador.</li>
   </ol>
